@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+}
+.screen {
+  display: flex;
+}
+
+.left {
+  width: 50vw;
+  height: 100vh;
+  position: relative;
+}
+
+.right {
+  background: url(img/laptop2.jpg) no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 50vw;
+  height: 100vh;
+  position: relative;
+}
+
+.text-container {
+  color: aliceblue;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  top: 40%;
+  left: 36%;
+  transform: translate(-50%, -50%);
+}
+
+.headingText {
+  margin-bottom: 10px;
+}
+h1 {
+  font-size: 2.125rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.0156rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  letter-spacing: 0.0313rem;
+  font-weight: 400;
+  margin-bottom: 5%;
+}
+
+.button {
+  background-color: #ffffff;
+  border: 0;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  color: #111827;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.25rem;
+  padding: 0.75rem 1rem;
+  text-align: center;
+  text-decoration: none #d1d5db solid;
+  text-decoration-thickness: auto;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button:hover {
+  background-color: rgb(249, 250, 251);
+}
+
+.button:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.button:focus-visible {
+  box-shadow: none;
+}
+
+/* GSAP */
+
+.box {
+  height: 200px;
+  width: 200px;
+}
+
+.card {
+  display: inline-block;
+  background-color: #330033;
+  height: 20px;
+  width: 90px;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+  padding: 5px;
+  border: 2px solid black;
+  position: absolute;
+  margin-right: 10px;
+  top: 300px;
+  left: 280px;
+  opacity: 0;
+}
+
+#logo {
+  height: 50px;
+  width: 200px;
+  background-color: #330033;
+  padding: 5px;
+  border: 2px solid black;
+  position: absolute;
+}
