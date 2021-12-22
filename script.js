@@ -554,7 +554,7 @@ function backSwipe() {
 }
 
 function main() {
-  let mainTL = gsap.timeline();
+  let mainTL = gsap.timeline({ delay: 3, repeat: -1 });
 
   mainTL
 
