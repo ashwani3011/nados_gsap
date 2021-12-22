@@ -1,41 +1,50 @@
 * {
   margin: 0;
 }
+body {
+  position: relative;
+  overflow: hidden;
+  font-family: "Roboto", sans-serif;
+}
+
 .screen {
   display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .left {
-  width: 50vw;
+  width: 56vw;
   height: 100vh;
   position: relative;
+  background: #1f1b2c;
 }
 
 .right {
   background: url(img/laptop2.jpg) no-repeat center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  width: 50vw;
+  background-size: 120%;
+  width: 44vw;
   height: 100vh;
   position: relative;
 }
 
 .text-container {
+  font-family: "Roboto", sans-serif;
   color: aliceblue;
   top: 0px;
   left: 0px;
   position: absolute;
-  top: 40%;
-  left: 36%;
+  top: 55%;
+  left: 56%;
   transform: translate(-50%, -50%);
 }
 
 .headingText {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 h1 {
+  font-weight: 500;
   font-size: 2.125rem;
   line-height: 2.5rem;
   letter-spacing: 0.0156rem;
@@ -45,28 +54,32 @@ p {
   font-size: 1rem;
   line-height: 1.25rem;
   letter-spacing: 0.0313rem;
-  font-weight: 400;
-  margin-bottom: 5%;
+  font-weight: 300;
+  margin-bottom: 20px;
+  width: 600px;
 }
 
 .button {
-  background-color: #ffffff;
+  background-color: #a5a4ab;
   border: 0;
   border-radius: 0.5rem;
   box-sizing: border-box;
-  color: #111827;
-  font-size: 0.875rem;
-  font-weight: 600;
+  color: #cfced1;
+  letter-spacing: 0.0513rem;
+  font-size: 0.975rem;
+  font-weight: bold;
   line-height: 1.25rem;
-  padding: 0.75rem 1rem;
+  /* padding: 0.75rem 1rem; */
   text-align: center;
-  text-decoration: none #d1d5db solid;
+  text-decoration: none white solid;
   text-decoration-thickness: auto;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   cursor: pointer;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  padding: 14px 45px;
+  margin-top: 10px;
 }
 
 .button:hover {
@@ -82,36 +95,198 @@ p {
   box-shadow: none;
 }
 
+.users {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  /* margin-top: 8rem; */
+}
+
+.users-img {
+  display: flex;
+}
+
+.users-img img {
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  margin-right: -0.6rem;
+  border: 2px solid #fdf2e9;
+}
+
+.users-img img:last-child {
+  margin: 0;
+}
+
+.user-text {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.default-screen {
+  height: 280px;
+  width: 446px;
+  border-radius: 1px;
+  background-color: #1f1b2c;
+  background-size: 100%;
+  position: absolute;
+  top: 156px;
+  left: 80px;
+}
+
+.lock-screen {
+  height: 460px;
+  width: 446px;
+  border-radius: 3px;
+  background: url(img/laptop-screen3.png) no-repeat center;
+  background-size: 100%;
+  position: absolute;
+  top: 66px;
+  left: 80px;
+}
+
+.textCommunity,
+.textCareer,
+.textCompete,
+.textContent {
+  padding: 10px;
+  position: absolute;
+  top: 270px;
+  left: 85px;
+  color: white;
+  letter-spacing: 0.0513rem;
+  font-size: 0.975rem;
+  line-height: 1.25rem;
+}
+.textCommunity > h5,
+.textCareer > h5,
+.textCompete > h5,
+.textContent > h5 {
+  padding: 5px;
+  border-bottom-right-radius: 10px;
+  margin-bottom: 5px;
+  width: 300px;
+}
+
+.home-screen {
+  height: 460px;
+  width: 446px;
+  border-radius: 3px;
+  background: url(img/community3.png) no-repeat center;
+  background-size: 100%;
+  position: absolute;
+  top: 66px;
+  left: 80px;
+}
+
+.career-screen {
+  height: 460px;
+  width: 446px;
+  border-radius: 3px;
+  background: url(img/career.png) no-repeat center;
+  background-size: 100%;
+  position: absolute;
+  top: 66px;
+  left: 80px;
+}
+
+.compete-screen {
+  height: 460px;
+  width: 446px;
+  border-radius: 3px;
+  background: url(img/compete.png) no-repeat center;
+  background-size: 100%;
+  position: absolute;
+  top: 66px;
+  left: 80px;
+}
+
+.content-screen {
+  height: 460px;
+  width: 446px;
+  border-radius: 3px;
+  background: url(img/content.png) no-repeat center;
+  background-size: 100%;
+  position: absolute;
+  top: 66px;
+  left: 80px;
+}
+
+.end-screen {
+  height: 460px;
+  width: 446px;
+  border-radius: 3px;
+  background: url(img/end.jpg) no-repeat center;
+  background-size: 100%;
+  position: absolute;
+  top: 66px;
+  left: 80px;
+}
+
+.hand-click {
+  position: absolute;
+}
+
+.end-text {
+  padding: 10px;
+  position: absolute;
+  top: 270px;
+  left: 85px;
+  color: white;
+  letter-spacing: 0.0513rem;
+  font-size: 0.975rem;
+  line-height: 1.25rem;
+}
+
+span {
+  color: red;
+}
+
+/* .delivered-text span {
+  color: #cf711f;
+  font-weight: 700;
+} */
+
 /* GSAP */
 
 .box {
-  height: 200px;
-  width: 200px;
+  position: absolute;
+  height: 400px;
+  width: 400px;
 }
 
 .card {
   display: inline-block;
-  background-color: #330033;
-  height: 20px;
-  width: 90px;
+  background-color: #1f1b2c;
+  height: 17px;
+  width: 70px;
   color: #ffffff;
-  font-size: 13px;
+  font-size: 10px;
   font-weight: 600;
   text-align: center;
-  padding: 5px;
-  border: 2px solid black;
+  padding: 3px;
+  border: 1px solid black;
   position: absolute;
   margin-right: 10px;
-  top: 300px;
-  left: 280px;
-  opacity: 0;
 }
 
 #logo {
   height: 50px;
   width: 200px;
-  background-color: #330033;
+  background-color: #1f1b2c;
   padding: 5px;
   border: 2px solid black;
   position: absolute;
 }
+
+.topics {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+}
+
+/* .hand,
+.path,
+.box {
+  position: absolute;
+} */
